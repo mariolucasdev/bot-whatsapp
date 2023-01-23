@@ -10,6 +10,7 @@ class Wellcome {
                 // Suporte
                 case 1: {
                     await client.sendText(message.from, dictionary.SUPPORT_WELLCOME);
+                    clientCalled.dialog = 'done'
                     break;
                 }
                 

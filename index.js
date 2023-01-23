@@ -29,7 +29,7 @@ function start(client) {
             clientCalled.stared = true
             clientCalled.number = message.from
             clientCalled.message = message.body
-            
+
             await client.sendText(message.from, "Olá eu sou a *Six*, sua atendente virtual.\nSeja bem vindo(a) a central de atendimento da *Agência Sixtec!*");
             await client.sendText(message.from, dictionary.WELLCOME);
             
@@ -53,32 +53,11 @@ function start(client) {
                 console.log("- Sales Case.");
                 Sales.execute(client, message, clientCalled)
                 break;
+            case 'done':
+                clientCalled.stared = false;
+                break;
             default:
                 break;
-        }
-        
-        // if(clientCalled.dialog == 'financial') {
-        //     console.log("- Financial Case.");
-            
-        //     Financial.execute(client, message, clientCalled)
-        //     return;
-        // }
-        
-        // if(clientCalled.dialog == 'sales') {
-        //     console.log("- Meta Case.");
-        //     Meta.execute(client, message, clientCalled)
-        //     return;
-        // }
-
-        // if(clientCalled.dialog == 'meta') {
-        //     console.log("- Meta Case.");
-        //     Meta.execute(client, message, clientCalled)
-        //     return;
-        // }
-
-        if(clientCalled.dialog == 'done') {
-            clientCalled.stared = false;
-            return;
         }
     })
 }
