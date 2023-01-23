@@ -2,11 +2,16 @@ export const dictionary = {
     WELLCOME : "Selecione uma das opções:\n\n*1* - Suporte\n*2* - Financeiro\n*3* - Comercial.\n*4* - Projeto Meta Batida.\n*0* - Encerrar Atendimento.",
     WELLCOME_UNSERSTEND : "Não consegui entender sua solicitação, tente novamente!",
     
-    SALES_WELLCOME : "Para qual serviço você gostaria de um orçamento? \n\n*1* - Gestão de Midais Sociais\n*2* - Sites\n*3* - Identidade Visual.\n*4* - Arte Avulsa.\n*0* - Voltar ao Menu Principal.",
-
+    
     SUPPORT_WELLCOME: "Entendi, aguarde um momento. Em alguns instantes alguém de nossa equipe entrará em contato.",
     FINANCIAL_WELLCOME : "Você pode acompanhar todos os seus projetos, faturas e ainda pagar via pix pela área do cliente. \nVocê já tem seu acesso ao sistema? Digite:\n *1* - Sim\n *2* - Gostaria de solicitar\n *3* - Voltar ao Início\n *0* - Cancelar",
     FINANCIAL_REQUIRE_ACCESS : "Tudo bem, aguarde só mais um momento que um dos nossos atendentes iré fornecer seu acesso",
     FINANCIAL_BYE : "Excelente, qualquer dúvida não deixe de falar conosco. Estamos encerrando seu atendimento, até mais.",
-    FINANCIAL_WAITING: "Por favor, aguarade só mais um momento..."
+    FINANCIAL_WAITING: "Por favor, aguarade só mais um momento...",
+    
+    SALES_WELLCOME : "Para qual serviço você gostaria de um orçamento? \n\n*1* - Gestão de Midais Sociais\n*2* - Identidade Visual.\n*3* - Pacote de Artes\n*4* - Arte Avulsa.\n*0* - Voltar ao Menu Principal.",
+    SALES_SOCIALMEDIA : "A gestão de redes sociais é o processo de planejar, implementar, monitorar e medir a eficácia de uma estratégia de mídias sociais para atingir objetivos específicos de negócios. Isso pode incluir a criação de conteúdo, a gestão de comunidades online, a análise de dados e a medição do desempenho. A gestão de redes sociais é uma parte importante da estratégia de marketing digital de uma empresa, pois permite construir relacionamentos com o público-alvo e aumentar a conscientização da marca.\n Segue nossa proposta comercial *Gestão de Mídias Sociais*.",
+    SALES_VISUAL_ID : "A identidade visual é o conjunto de elementos gráficos e visuais que compõem a imagem e a representação visual de uma marca, empresa, produto ou serviço. Esses elementos podem incluir o logotipo, tipografia, cores, imagens, entre outros. A identidade visual é projetada para ser consistente e reconhecível, para que seja fácil para as pessoas associarem os elementos à marca ou empresa em questão. Além disso, a identidade visual também pode ser usada para transmitir certos valores ou características da marca ou empresa, como ser moderno, confiável ou luxuoso.\n Segue nossa proposta comercial para *Desenvolvimento de Identidades Visuais*.",
+    SALES_ART_PACKS : "As artes profissionais têm uma importância crítica para as mídias sociais, pois elas ajudam a construir e fortalecer a identidade visual e a reputação da marca. As artes profissionais, como logotipos, banners e imagens, podem ser usadas para atrair a atenção dos seguidores e incentivá-los a interagir com a marca. Além disso, as artes profissionais também podem ajudar a transmitir a mensagem e os valores da marca de maneira clara e coerente.\n\nAs artes profissionais também são importantes porque ajudam a diferenciar a marca de seus concorrentes. As imagens e gráficos de alta qualidade podem ajudar a criar uma sensação de confiança e credibilidade, o que é crucial para construir relacionamentos com os seguidores e potenciais clientes.\n\nPor fim, as artes profissionais também podem ser usadas para aumentar a visibilidade da marca e alcançar novos públicos. As artes bem projetadas e de qualidade podem ser compartilhadas e amplamente distribuídas nas redes sociais, aumentando a exposição da marca e ajudando a atrair novos seguidores.\n Segue nossa proposta comercial para *Pacotes de Artes Profissionais*.",
+    
 }

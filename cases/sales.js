@@ -11,24 +11,48 @@ class Sales {
                 // Gestão de Midais Sociais
                 case 1: {
                     await client.sendText(message.from, dictionary.SALES_SOCIALMEDIA);
-                    break;
-                }
-                
-                // Sites
-                case 2: {
-                    await client.sendText(message.from, dictionary.SALES_SOCIALMEDIA);
-                    break;
-                }
+                    await client.sendFile(message.from,
+                        "docs/proposta-social-media.pdf",
+                        "PROPOSTA-COMERCIAL-SOCIALMEDIA.pdf",
+                        "Segue nossa proposta comercial para *Gestão de Mídias Sociais*")
 
-                // Identidade Visual
-                case 3: {
-                    await client.sendText(message.from, dictionary.SALES_SOCIALMEDIA);
+                    clientCalled.dialog = 'sales'
                     break;
                 }
                 
+                // Identidade Visual
+                case 2: {
+                    await client.sendText(message.from, dictionary.SALES_VISUAL_ID);
+                    await client.sendFile(message.from,
+                        "docs/proposta-identidade-visual.pdf",
+                        "PROPOSTA-COMERCIAL-IDENTIDADE-VISUAL.pdf",
+                        "Segue nossa proposta comercial para *Desenvolvimento de Identidades Visuais*")
+    
+                    clientCalled.dialog = 'sales'
+                    break;
+                }
+                
+                // Pacotes de Artes
+                case 3: {
+                    await client.sendText(message.from, dictionary.SALES_ART_PACKS);
+                    await client.sendFile(message.from,
+                        "docs/proposta-pacote-de-artes.pdf",
+                        "PROPOSTA-COMERCIAL-ARTES.pdf",
+                        "Segue nossa proposta comercial para *Pacotes de Artes Profissionais para Mídias Sociais*")
+                        
+                        clientCalled.dialog = 'sales'
+                        break;
+                    }
+                    
                 // Arte Avulsa
                 case 4: {
-                    await client.sendText(message.from, dictionary.SALES_SOCIALMEDIA);
+                    await client.sendText(message.from, dictionary.SALES_ART_PACKS);
+                    await client.sendFile(message.from,
+                        "docs/proposta-pacote-de-artes.pdf",
+                        "PROPOSTA-COMERCIAL-ARTES.pdf",
+                        "Segue nossa proposta comercial para *Pacotes de Artes Profissionais para Mídias Sociais*")
+
+                    clientCalled.dialog = 'sales'
                     break;
                 }
                 
@@ -42,7 +66,8 @@ class Sales {
             return
         } catch (error) {
             console.log(error);
-            client.sendText(message.from, "❌ Desculpe, mas não consegui entender sua solicitação.");
+            client.sendText(message.from, "❌ Desculpe, mas não consegui entender sua solicitação. Tente novamente!");
+            await client.sendText(message.from, dictionary.SALES_WELLCOME);
         }
         
         return

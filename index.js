@@ -1,6 +1,7 @@
 import { create } from 'venom-bot'
 import Wellcome from './cases/wellcome.js';
 import Financial from './cases/financial.js';
+import Sales from './cases/sales.js';
 import { dictionary } from './constants/index.js';
 
 create({
@@ -47,6 +48,10 @@ function start(client) {
             case 'financial':
                 console.log("- Financial Case.");
                 Financial.execute(client, message, clientCalled)
+                break;
+            case 'sales':
+                console.log("- Sales Case.");
+                Sales.execute(client, message, clientCalled)
                 break;
             default:
                 break;
